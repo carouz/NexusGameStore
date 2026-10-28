@@ -1,0 +1,24 @@
+name: nexus_game_store
+description: "Nexus Game Store - catalogo e biblioteca de jogos (projeto academico Flutter + SQLite)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.3.0
+
+# As dependencias ficam alinhadas ao "f" de flutter (como nos slides)
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.3      # banco de dados SQLite local (RNF02)
+  path: ^1.9.0         # monta o caminho do arquivo do banco (join)
+  crypto: ^3.0.3       # gera o hash SHA-256 da senha (RNF06)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
